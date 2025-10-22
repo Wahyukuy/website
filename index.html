@@ -1,87 +1,61 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Koprasi Sekolah - Belanja & Forum</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Koperasi Sekolah</h1>
-    <nav>
-      <a href="http://sman1grogol.sch.id/wordpress/">Kunjungi website sekolah kami</a>
-    </nav>
-  </header>
+<section id="produk">
+  <h2>Produk Kami</h2>
+  <div class="produk-container">
+    <div class="produk" onclick="tampilkanDeskripsi('produk1')">
+      <img src="produk1.jpg" alt="Produk 1">
+      <p>Produk 1</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk2')">
+      <img src="produk2.jpg" alt="Produk 2">
+      <p>Produk 2</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk3')">
+      <img src="produk3.jpg" alt="Produk 3">
+      <p>Produk 3</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk4')">
+      <img src="produk4.jpg" alt="Produk 4">
+      <p>Produk 4</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk5')">
+      <img src="produk5.jpg" alt="Produk 5">
+      <p>Produk 5</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk6')">
+      <img src="produk6.jpg" alt="Produk 6">
+      <p>Produk 6</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk7')">
+      <img src="produk7.jpg" alt="Produk 7">
+      <p>Produk 7</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk8')">
+      <img src="produk8.jpg" alt="Produk 8">
+      <p>Produk 8</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk9')">
+      <img src="produk9.jpg" alt="Produk 9">
+      <p>Produk 9</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk10')">
+      <img src="produk10.jpg" alt="Produk 10">
+      <p>Produk 10</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk11')">
+      <img src="produk11.jpg" alt="Produk 11">
+      <p>Produk 11</p>
+    </div>
+    <div class="produk" onclick="tampilkanDeskripsi('produk12')">
+      <img src="produk12.jpg" alt="Produk 12">
+      <p>Produk 12</p>
+    </div>
+  </div>
 
-  <section id="produk">
-    <h2>Produk Kami</h2>
-    <div class="produk-container">
-      <div class="produk" onclick="tampilkanDeskripsi('produk1')">
-        <img src="produk1.jpg" alt="Produk 1">
-        <p>Produk 1</p>
-      </div>
-      <div class="produk" onclick="tampilkanDeskripsi('produk2')">
-        <img src="produk2.jpg" alt="Produk 2">
-        <p>Produk 2</p>
-      </div>
-      <div class="produk-container">
-  <div class="produk" onclick="tampilkanDeskripsi('produk3')">
-      <img src="produk3.jpg" alt="produk3">
-      <p>produk3</p>
+  <!-- Pop-up Deskripsi -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="tutupPopup()">&times;</span>
+      <p id="popup-deskripsi"></p>
+    </div>
   </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk4')">
-      <img src="produk4.jpg" alt="produk4">
-      <p>produk4</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk5')">
-      <img src="produk5.jpg" alt="produk5">
-      <p>produk5</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk6')">
-      <img src="produk5.jpg" alt="produk5">
-      <pproduk6</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk7')">
-      <img src="produk6.jpg" alt="produk6">
-      <p>produk7</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk8')">
-      <img src="produk7.jpg" alt="produk7">
-      <p>produk8</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk9')">
-      <img src="produk8.jpg" alt="produk8">
-      <p>produk9</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk10')">
-      <img src="produk8.jpg" alt="produk10">
-      <pproduk10</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk11')">
-      <img src="produk9.jpg" alt="produk11">
-      <p>produk11</p>
-  </div>
-  <div class="produk" onclick="tampilkanDeskripsi('produk12')">
-      <img src="produk10.jpg" alt="produk12">
-      <p>produk12</p>
-  </div>
-        <div id="popup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="tutupPopup()">&times;</span>
-    <p id="popup-deskripsi"></p>
-  </div>
-</div>
-      </div>
-    <div id="deskripsi-produk"></div>
-  </section>
-
-  <section id="forum">
-    <h2>Forum Diskusi</h2>
-    <textarea placeholder="Tulis pendapatmu..."></textarea>
-    <button onclick="kirimForum()">Kirim</button>
-    <ul id="daftar-forum"></ul>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-</html>
+</section>
