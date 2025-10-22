@@ -1,17 +1,17 @@
 function tampilkanDeskripsi(id) {
   const deskripsi = {
-    produk1: "Produk 1 adalah sepatu olahraga ringan dan nyaman.",
-    produk2: "Produk 2 adalah tas ransel anti air dengan banyak kompartemen.",
-    produk3: "Produk 3 adalah jam tangan pintar dengan fitur kesehatan.",
-    produk4: "Produk 4 adalah kacamata stylish dengan perlindungan UV.",
-    produk5: "Produk 5 adalah headphone bluetooth dengan suara jernih dan baterai tahan lama.",
-    produk6: "Produk 6 adalah powerbank 20.000mAh dengan pengisian cepat.",
-    produk7: "Produk 7 adalah keyboard mekanik RGB untuk pengalaman mengetik maksimal.",
-    produk8: "Produk 8 adalah mouse wireless ergonomis dengan sensitivitas tinggi.",
-    produk9: "Produk 9 adalah botol minum termal yang menjaga suhu hingga 12 jam.",
-    produk10: "Produk 10 adalah lampu LED dekoratif untuk suasana kamar yang cozy.",
-    produk11: "Produk 11 adalah flashdisk 64GB dengan kecepatan transfer tinggi.",
-    produk12: "Produk 12 adalah buku catatan hardcover dengan desain elegan."
+    produk1: "buku tulis Rp4.500",
+    produk2: "Buku Gambar Rp8.000",
+    produk3: "Pensil Rp1.500",
+    produk4: "Bolpoint Rp3.000",
+    produk5: "Tipe-X Rp5.000",
+    produk6: "AQUA Rp3.000",
+    produk7: "Kolong Hasduk Rp4.000",
+    produk8: "Dasi Rp15.000",
+    produk9: "Kertas Folio per biji Rp1.500",
+    produk10: "Hasduk Rp7.000",
+    produk11: "Topi sekolah Rp23.000",
+    produk12: "Penghapus Rp2.000"
   };
 
   const output = document.getElementById("deskripsi-produk");
