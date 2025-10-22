@@ -14,14 +14,6 @@ function tampilkanDeskripsi(id) {
     produk12: "Produk 12 adalah buku catatan dengan desain menarik."
   };
 
-  const output = document.getElementById("deskripsi-produk");
-  if (deskripsi[id]) {
-    output.innerText = deskripsi[id];
-  } else {
-    output.innerText = "Deskripsi produk tidak ditemukan.";
-  }
-}
-
 function kirimForum() {
   const teks = document.querySelector("textarea").value;
   if (teks.trim() !== "") {
