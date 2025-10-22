@@ -18,11 +18,19 @@ nav a {
   text-decoration: none;
 }
 
+.subjudul {
+  font-size: 18px;
+  color: #f0e6ff;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
 .produk-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
   gap: 20px;
   padding: 20px;
+  justify-items: center;
 }
 
 .produk {
@@ -32,12 +40,15 @@ nav a {
 }
 
 .produk:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-img {
+.produk img {
   width: 150px;
+  height: 200px; /* Rasio 3:4 */
+  object-fit: cover;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 #deskripsi-produk {
@@ -64,30 +75,7 @@ button {
   cursor: pointer;
 }
 
-.subjudul {
-  font-size: 18px;
-  color: #f0e6ff;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-.produk-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
-}
-
-.produk {
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.produk:hover {
-  transform: scale(1.05);
-}
+/* ✅ POP-UP STYLE DENGAN ANIMASI */
 .popup {
   display: none;
   position: fixed;
@@ -96,19 +84,30 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0,0,0,0.6);
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .popup-content {
   background-color: #fff;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   max-width: 400px;
   text-align: center;
   box-shadow: 0 0 10px #000;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .close {
@@ -117,31 +116,28 @@ button {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-.produk img {
-  width: 150px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.close:hover {
+  color: #4b0082;
 }
 
+/* ✅ RESPONSIVE GRID */
 @media (max-width: 992px) {
   .produk-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom di tablet */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .produk-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom di HP */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .produk-container {
-    grid-template-columns: 1fr; /* 1 kolom di layar kecil */
+    grid-template-columns: 1fr;
   }
 }
-
