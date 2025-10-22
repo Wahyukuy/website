@@ -1,15 +1,31 @@
-<section id="produk">
-  <h2>Produk Kami</h2>
-  <div class="produk-container">
-    <div class="produk" onclick="tampilkanDeskripsi('produk1')">
-      <img src="produk1.jpg" alt="Produk 1">
-      <p>Produk 1</p>
-    </div>
-    <div class="produk" onclick="tampilkanDeskripsi('produk2')">
-      <img src="produk2.jpg" alt="Produk 2">
-      <p>Produk 2</p>
-    </div>
-    <div class="produk" onclick="tampilkanDeskripsi('produk3')">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TokoKita - Belanja & Forum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TokoKita</h1>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#forum">Forum</a>
+    </nav>
+  </header>
+
+  <section id="produk">
+    <h2>Produk Unggulan</h2>
+    <div class="produk-container">
+      <div class="produk" onclick="tampilkanDeskripsi('produk1')">
+        <img src="produk1.jpg" alt="Produk 1">
+        <p>Produk 1</p>
+      </div>
+      <div class="produk" onclick="tampilkanDeskripsi('produk2')">
+        <img src="produk2.jpg" alt="Produk 2">
+        <p>Produk 2</p>
+      </div>
+       <div class="produk" onclick="tampilkanDeskripsi('produk3')">
       <img src="produk3.jpg" alt="Produk 3">
       <p>Produk 3</p>
     </div>
@@ -49,5 +65,17 @@
       <img src="produk12.jpg" alt="Produk 12">
       <p>Produk 12</p>
     </div>
-  </div>
-</section>
+    </div>
+    <div id="deskripsi-produk"></div>
+  </section>
+
+  <section id="forum">
+    <h2>Forum Diskusi</h2>
+    <textarea placeholder="Tulis pendapatmu..."></textarea>
+    <button onclick="kirimForum()">Kirim</button>
+    <ul id="daftar-forum"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
