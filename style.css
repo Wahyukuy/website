@@ -70,3 +70,28 @@ button {
   margin-top: -10px;
   margin-bottom: 10px;
 }
+
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.produk {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.produk:hover {
+  transform: scale(1.05);
+}
+
+.produk img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
