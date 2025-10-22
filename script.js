@@ -20,6 +20,7 @@ function tampilkanDeskripsi(id) {
   } else {
     output.innerText = "Deskripsi produk tidak ditemukan.";
   }
+}
 
 function kirimForum() {
   const teks = document.querySelector("textarea").value;
