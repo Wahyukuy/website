@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4b0082;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.produk-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.produk {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.produk:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+#deskripsi-produk {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+#forum {
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
