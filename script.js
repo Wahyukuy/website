@@ -14,13 +14,23 @@ function tampilkanDeskripsi(id) {
     produk12: "Produk 12 adalah buku catatan hardcover dengan desain elegan."
   };
 
-  const output = document.getElementById("deskripsi-produk");
+    const popup = document.getElementById("popup");
+  const isi = document.getElementById("popup-deskripsi");
+
   if (deskripsi[id]) {
-    output.innerText = deskripsi[id];
+    isi.innerText = deskripsi[id];
+    popup.style.display = "block";
   } else {
-    output.innerText = "Deskripsi produk tidak ditemukan.";
+    isi.innerText = "Deskripsi produk tidak ditemukan.";
+    popup.style.display = "block";
   }
 }
+
+function tutupPopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+
 
 function kirimForum() {
   const teks = document.querySelector("textarea").value;
