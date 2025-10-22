@@ -95,3 +95,21 @@ button {
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (max-width: 992px) {
+  .produk-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .produk-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di HP */
+  }
+}
+
+@media (max-width: 480px) {
+  .produk-container {
+    grid-template-columns: 1fr; /* 1 kolom di layar kecil */
+  }
+}
